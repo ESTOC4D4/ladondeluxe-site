@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ladon Deluxe offers cabinet painting, wood finishing, and custom furniture painting and sales.">
+  <title>Ladon Deluxe | Custom Finishes & Furniture</title>
+  <style>
+    :root { --ink:#191815; --gold:#b9975c; --cream:#f6f3ec; --sand:#e8e0d2; --muted:#6a655d; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; font-family:Arial,Helvetica,sans-serif; color:var(--ink); background:var(--cream); }
+    a { color:inherit; text-decoration:none; }
+    .wrap { width:min(1120px,calc(100% - 44px)); margin:auto; }
+    header { background:#181714; color:white; border-bottom:1px solid #38342b; }
+    .top { min-height:88px; display:flex; justify-content:space-between; align-items:center; gap:24px; }
+    .brand { font:30px Georgia,serif; letter-spacing:3px; white-space:nowrap; }
+    .brand span { color:#d4b57a; }
+    nav { display:flex; flex-wrap:wrap; gap:26px; }
+    nav a { font-size:12px; letter-spacing:1.8px; text-transform:uppercase; }
+    nav a:hover { color:#d4b57a; }
+    .hero { background:radial-gradient(circle at 88% 28%, #504333, transparent 43%),linear-gradient(135deg,#1a1917,#302b24); color:white; }
+    .hero-grid { min-height:540px; display:grid; grid-template-columns:1.2fr .8fr; align-items:center; gap:48px; padding:80px 0; }
+    .eyebrow { color:#d6b57b; text-transform:uppercase; letter-spacing:5px; font-size:12px; font-weight:bold; }
+    h1,h2,h3,p { margin-top:0; }
+    h1 { font:clamp(50px,6vw,83px)/1.09 Georgia,serif; letter-spacing:-1.2px; margin:22px 0; }
+    .intro { color:#d6d1c9; font-size:18px; line-height:1.7; max-width:590px; }
+    .buttons { display:flex; flex-wrap:wrap; gap:12px; margin-top:34px; }
+    .btn { display:inline-block; padding:16px 22px; font-weight:bold; letter-spacing:1.4px; text-transform:uppercase; font-size:12px; border:1px solid #b9975c; }
+    .btn.gold { background:#b9975c; color:#151411; }
+    .btn.outline { color:white; }
+    .hero-art { height:370px; position:relative; border:1px solid #8a7352; background:linear-gradient(145deg,#8a7352,#42362b 55%,#1c1916); box-shadow:25px 25px 0 rgba(185,151,92,.09); }
+    .hero-art:before { content:""; position:absolute; inset:35px; border:13px solid rgba(233,214,177,.4); box-shadow:inset 0 0 0 1px rgba(255,255,255,.25); }
+    .hero-art:after { content:"MADE TO TRANSFORM"; position:absolute; bottom:20px; width:100%; text-align:center; color:#e3cc9e; font-size:11px; letter-spacing:4px; }
+    section { padding:90px 0; }
+    .section-heading { max-width:720px; margin-bottom:35px; }
+    h2 { font:clamp(34px,4.2vw,52px)/1.2 Georgia,serif; margin:15px 0; }
+    .lead { color:#555047; line-height:1.75; font-size:17px; }
+    .cards { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
+    .card { background:white; border:1px solid #e4ddcf; padding:30px; min-height:235px; }
+    .card-num { color:#aa824a; font:16px Georgia,serif; }
+    h3 { font:27px Georgia,serif; margin:30px 0 14px; }
+    .card p { color:#666055; line-height:1.65; }
+    .collection { background:#e9e2d5; }
+    .split { display:grid; grid-template-columns:1fr 1fr; gap:45px; align-items:center; }
+    .sample { min-height:330px; background:linear-gradient(150deg,#d9c6aa,#8b7056 50%,#3a332b); border:12px solid #f6f3ec; position:relative; }
+    .sample:after { content:"CUSTOM COLOR. PERSONAL STYLE."; position:absolute; left:25px; bottom:25px; color:white; letter-spacing:3px; font-size:11px; }
+    .dark-section { background:#201e1a; color:white; }
+    .dark-section .lead { color:#d0cbc2; }
+    .steps { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; margin-top:35px; }
+    .step { border-top:1px solid var(--gold); padding-top:20px; }
+    .step strong { color:#d1af77; display:block; margin-bottom:12px; }
+    .step p { color:#c9c3b9; line-height:1.65; }
+    .contact { text-align:center; }
+    .contact .lead { max-width:650px; margin:0 auto 20px; }
+    .note { font-size:14px; color:#675f53; margin-top:22px; }
+    footer { background:#151411; color:#d4caba; text-align:center; padding:30px 20px; font-size:13px; }
+    footer strong { color:#d9bb82; font:20px Georgia,serif; letter-spacing:2px; }
+    @media(max-width:760px) {
+      .top { flex-direction:column; justify-content:center; padding:22px 0; }
+      nav { justify-content:center; gap:13px; }
+      nav a { font-size:11px; }
+      .hero-grid,.split { grid-template-columns:1fr; }
+      .hero-grid { padding:60px 0; }
+      .hero-art { height:230px; }
+      .cards,.steps { grid-template-columns:1fr; }
+      section { padding:62px 0; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap top">
+      <a class="brand" href="#home">LADON <span>DELUXE</span></a>
+      <nav aria-label="Main navigation">
+        <a href="#services">Services</a>
+        <a href="#furniture">Furniture</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="hero" id="home">
+      <div class="wrap hero-grid">
+        <div>
+          <div class="eyebrow">Cabinetry · Wood · Furniture</div>
+          <h1>Custom Finishes.<br>Timeless Elegance.</h1>
+          <p class="intro">Thoughtful transformations for cabinets, wood surfaces, and furniture — plus custom-finished pieces for your space.</p>
+          <div class="buttons">
+            <a class="btn gold" href="#contact">Request a Quote</a>
+            <a class="btn outline" href="#services">Explore Services</a>
+          </div>
+        </div>
+        <div class="hero-art" role="img" aria-label="Decorative panel representing a custom wood finish"></div>
+      </div>
+    </div>
+
+    <section id="services">
+      <div class="wrap">
+        <div class="section-heading">
+          <div class="eyebrow">What We Do</div>
+          <h2>Refined finishes for every space.</h2>
+          <p class="lead">From refreshing existing cabinetry to reimagining furniture, Ladon Deluxe focuses on color, character, and detail.</p>
+        </div>
+        <div class="cards">
+          <article class="card"><div class="card-num">01</div><h3>Cabinet Painting</h3><p>Update the appearance of kitchen cabinets, bathroom vanities, and built-ins with a new finish.</p></article>
+          <article class="card"><div class="card-num">02</div><h3>Wood Finishing</h3><p>Explore painted, stained, or refreshed looks for wood features and surfaces.</p></article>
+          <article class="card"><div class="card-num">03</div><h3>Furniture Painting</h3><p>Give tables, dressers, chairs, and other furniture new life through custom paint finishes.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="collection" id="furniture">
+      <div class="wrap split">
+        <div class="sample" role="img" aria-label="Decorative color and wood finish sample"></div>
+        <div>
+          <div class="eyebrow">Furniture Collection</div>
+          <h2>Pieces with personality.</h2>
+          <p class="lead">Interested in a custom-finished furniture piece? Ladon Deluxe also plans to feature furniture and cabinetry available for purchase. Product photographs and availability will be added here.</p>
+          <a class="btn gold" href="#contact">Ask About Furniture</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="dark-section" id="about">
+      <div class="wrap">
+        <div class="eyebrow">About Ladon Deluxe</div>
+        <h2>A fresh perspective on familiar spaces.</h2>
+        <p class="lead">Ladon Deluxe brings together in-home painting and refinishing services with individually finished furniture. Our goal is simple: help you create a look that feels distinctly yours.</p>
+        <div class="steps">
+          <div class="step"><strong>01 · Share your vision</strong><p>Tell us what you would like to transform or find.</p></div>
+          <div class="step"><strong>02 · Discuss the details</strong><p>Explore the surface, style, finish, and project scope.</p></div>
+          <div class="step"><strong>03 · Plan your project</strong><p>Review the next steps before any work begins.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="wrap">
+        <div class="eyebrow">Get in Touch</div>
+        <h2>Let's create something beautiful.</h2>
+        <p class="lead">Have a cabinet, wood, or furniture project in mind? Contact Ladon Deluxe to discuss your ideas and request a quote.</p>
+        <p class="note"><strong>Contact information coming soon.</strong><br>Add your business email or phone number here before publishing.</p>
+      </div>
+    </section>
+  </main>
+  <footer><strong>LADON DELUXE</strong><p>Cabinet Painting · Wood Finishing · Furniture</p><p>&copy; 2026 Ladon Deluxe. All rights reserved.</p></footer>
+</body>
+</html>
